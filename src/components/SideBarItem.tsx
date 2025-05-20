@@ -12,7 +12,6 @@ interface Props {
 
 export const SideBarItem = ({ icon, path, title }: Props) => {
   const pathName = usePathname();
-  console.log('server',pathName,'seleccionado', path);
   
   return (
     
