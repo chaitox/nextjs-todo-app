@@ -19,6 +19,10 @@ const menuItems = [
     icon: <IoCalendar />,
     path:'/dashboard/server-todos',
     title: "Server actions",
+  },{
+    icon: <IoCalendar />,
+    path:'/dashboard/cookies',
+    title: "Cookes",
   }
 ]
 
