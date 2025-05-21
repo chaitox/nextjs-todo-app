@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 import { IoTrashOutline } from "react-icons/io5";
 import * as api from "@/components/helpers/todo";
+import { createTodoAction } from "../actions/todo-actions";
 
 export const NewTodo = () => {
   const router = useRouter();
@@ -11,9 +12,10 @@ export const NewTodo = () => {
 
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    await api.createTodo(description);
-    router.refresh();
-    setDescription("");
+    //Wawait api.createTodo(description);
+    await createTodoAction(description);
+   // router.refresh();
+    //wsetDescription("");
   };
 
     const deleteCompleted = async () => {
