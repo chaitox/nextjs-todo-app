@@ -8,22 +8,26 @@ import path from "path";
 const menuItems = [
   {
     icon: <IoCalendar />,
-    path:'/dashboard',
+    path: '/dashboard',
     title: "Dashboard",
   },
-   {
+  {
     icon: <IoCalendar />,
-    path:'/dashboard/rest-todos',
+    path: '/dashboard/rest-todos',
     title: "Todo",
   }, {
     icon: <IoCalendar />,
-    path:'/dashboard/server-todos',
+    path: '/dashboard/server-todos',
     title: "Server actions",
-  },{
+  }, {
     icon: <IoCalendar />,
-    path:'/dashboard/cookies',
+    path: '/dashboard/cookies',
     title: "Cookes",
-  }
+  }, {
+    icon: <IoCalendar />,
+    path: '/dashboard/products',
+    title: "Products",
+  },
 ]
 
 export const SideBar = () => {
@@ -36,7 +40,7 @@ export const SideBar = () => {
             {/* Next/Image */}
 
             <Image
-              src="/image/bigon.png"
+              src="/images/bigon.png"
               className="w-32"
               alt="tailus logo"
               width={100}
@@ -48,7 +52,7 @@ export const SideBar = () => {
         <div className="mt-8 text-center">
           {/* Next/Image */}
           <img
-            src="/image/user30.jpg"
+            src="/images/user30.jpg"
             alt=""
             className="w-10 h-10 m-auto rounded-full object-cover lg:w-28 lg:h-28"
           />
@@ -68,7 +72,7 @@ export const SideBar = () => {
               );
             })
           }
-          
+
         </ul>
       </div>
 
